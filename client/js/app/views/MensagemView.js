@@ -4,9 +4,9 @@ class MensagemView {
   }
 
   template(model) {
-    return `
+    return model.texto ? `
       <p class="alert alert-info">${model.texto}</p>
-    `
+    ` : '<p></p>'
   }
 
   update(model) {
